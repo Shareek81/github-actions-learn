@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]  
+  workflow_dispatch: 
+
+jobs:
+  Run-App:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Test Script
+        run: ls 
