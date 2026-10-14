@@ -1,0 +1,16 @@
+name: Manual Workflow with Input
+
+on:
+  workflow_dispatch:
+    inputs:
+      personname:
+        description: 'Person to greet'
+        default: 'Shareek'
+        required: true
+
+jobs:
+  Greet-Person:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting!
+        run: echo "Hello, ${{github.event.inputs.personname}}!"
