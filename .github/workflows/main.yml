@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run Test Script
-        run: ls 
+        run: python src/app.py
