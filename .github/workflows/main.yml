@@ -16,3 +16,12 @@ jobs:
         run: |
           cd ..
           ls
+  
+  Run-Python-App:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Python
+        run: python src/app.py
