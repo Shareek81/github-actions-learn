@@ -12,10 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Run Test Script
-        run: |
-          cd ..
-          ls
+      - name: Run Tests
+        run: python -m unittest discover -s tests -v
   
   Run-Python-App:
     
